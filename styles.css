@@ -1,18 +1,19 @@
-/* RESET DEFAULTS */
+/* Body section */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica', Arial, sans-serif;
+    background: linear-gradient(90deg, #F7AD28 0%, #CF3437 49.97%, #F7AD28 100%);
   }
   
-  /* HEADER STYLES */
+  /* Header section */
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     background: white;
-    border-bottom: 1px solid #eee;
+    border-bottom: 5px solid black;
   }
   
   nav a {
@@ -22,19 +23,28 @@ body, h1, h2, h3, p {
   }
   
   header button {
-    background: #E4002B; /* KFC's red */
+    background: #ff8000; 
     color: white;
-    border: none;
+    border: 8px dashed; 
     padding: 8px 16px;
     border-radius: 4px;
   }
+
+  button:hover {
+    scale: 1.2; 
+  }
   
-  /* HERO SECTION */
+  /* Hero section */
   .hero {
     position: relative;
     text-align: center;
   }
-  
+
+  .hero img {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+  }
   .hero h1 {
     position: absolute;
     top: 50%;
@@ -43,35 +53,58 @@ body, h1, h2, h3, p {
     color: white;
     font-size: 3rem;
   }
+
   
-  /* MENU SECTION */
+  /* Menu section */
   .menu {
     padding: 40px 20px;
     text-align: center;
   }
-  
-  .food-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-  }
+
   
   .food-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
     overflow: hidden;
   }
   
   .food-card img {
-    width: 100%;
-    height: 180px;
+    width: 500px;
+    height: auto;
     object-fit: cover;
+    border-radius: 30px;
+  }
+
+  /* Center box section*/
+  .center-box {
+    background: #fff;
+    border: 5px solid #ffd600;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: justify;
+    color: black;
+  }
+
+  /* Removes background color from paragraph if present */
+  .center-box p {
+    background: none;
+    margin: 0;
+  }
+
+  .center-box h3 {
+    background: none;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .center-box h1 {
+    background: none;
+    margin: 0;
+    font-family: "Pinyon Script", cursive;
   }
   
-  /* FOOTER */
+  /* Footer */
   footer {
-    background: #222;
     color: white;
     text-align: center;
     padding: 20px;
@@ -81,3 +114,8 @@ body, h1, h2, h3, p {
     width: 30px;
     margin: 0 10px;
   }
+
+  .logo {
+    padding-left: 650px;
+  }
+
